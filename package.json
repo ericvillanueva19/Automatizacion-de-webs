@@ -1,0 +1,24 @@
+{
+  "name": "automatizacion-portfolio",
+  "version": "1.0.0",
+  "description": "SDET Portfolio Framework con POM y libreria FJ",
+  "main": "index.js",
+  "scripts": {
+    "test:tmdb": "playwright test tests/tmdb.spec.js",
+    "test:conduit": "playwright test tests/conduit.spec.js",
+    "test:ae": "playwright test tests/automationExercise.spec.js",
+    "test:all": "playwright test",
+    "report": "playwright show-report evidence/html-report"
+  },
+  "keywords": [
+    "playwright",
+    "pom",
+    "sdet"
+  ],
+  "author": "Herib",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.42.1",
+    "@types/node": "^20.11.30"
+  }
+}
